@@ -1,0 +1,303 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom, #0a0014, #1e0030);
+  color: #fff;
+  scroll-behavior: smooth;
+  font-weight: 600;
+}
+
+/* === Video Background Galaxy === */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background-color: black;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.4) saturate(1.2);
+}
+
+/* === Header === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #15002bd0;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(58, 0, 94, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 60px rgba(255, 0, 255, 0.2);
+}
+
+.logo {
+  height: 50px;
+}
+
+/* === Navigation === */
+.nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #a86eff;
+}
+
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.middle-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* === Sidebar === */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background: rgba(30, 0, 60, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2rem;
+  transition: right 0.3s ease;
+  z-index: 2000;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar a {
+  color: white;
+  margin: 1rem 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.sidebar .close-btn {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* === Buttons === */
+.btn, .btn-beli {
+  background: linear-gradient(135deg, #6e00ff, #b400ff);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #6e00ff88;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.btn:hover, .btn-beli:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #b400ffcc;
+}
+
+/* === Hero Section === */
+.video {
+  text-align: center;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-adjusted {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.video h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #dcc2ff;
+  text-shadow: 0 0 30px #9f00ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.video p {
+  font-size: 1.5rem;
+  color: #f0dbff;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.video-banner video {
+  width: 100%;
+  max-width: 960px;
+  border-radius: 15px;
+  box-shadow: 0 0 50px #3c0067;
+}
+
+/* === Produk Section === */
+.popular {
+  padding: 3rem 2rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.car-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  background: rgba(144, 0, 255, 0.1);
+  border: 2px solid rgba(230, 189, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(94, 0, 166, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: #fff;
+  max-width: 300px;
+  transition: 0.3s ease-in-out;
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.car-card h3 {
+  margin: 0.5rem 0;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.car-card p {
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.car-card del {
+  color: #ff9090;
+  margin-right: 5px;
+}
+
+.car-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px #a000ff, 0 0 40px #ff00ff44;
+  border-color: rgba(200, 73, 255, 0.6);
+}
+
+/* === Subjudul Section === */
+.subjudul {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.subjudul h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 50px #eed5ff;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.subjudul h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-shadow:
+    0 0 10px #ff00ff,
+    0 0 20px #cc00ff,
+    0 0 40px #a200ff;
+  color: #ffeaff;
+  animation: glowText 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  0% {
+    text-shadow:
+      0 0 10px #ff00ff,
+      0 0 20px #cc00ff,
+      0 0 40px #a200ff;
+  }
+  100% {
+    text-shadow:
+      0 0 20px #ff00ff,
+      0 0 30px #cc00ff,
+      0 0 60px #a200ff;
+  }
+}
+
+/* === Sub1 Section (di bawah hero) === */
+.sub1 {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.sub1 h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px #9900ff;
+  color: rgb(251, 192, 255);
+}
+
+.sub1 h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  text-shadow:
+    -1px -1px 0 #9900ff,
+     1px -1px 0 #9900ff,
+    -1px  1px 0 #9900ff,
+     1px  1px 0 #9900ff,
+     0 0 10px #2b00ff,
+     0 0 20px #d400ff;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WALD Garage - Diecast Terlengkap</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background -->
+  <div class="galaxy-bg"></div>
+
+  <main>
+    <!-- Video Background -->
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="video/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <img src="img/logo.png" alt="Logo" class="logo" />
+      <div class="middle-nav">
+        <a href="komunitas.html" class="btn white-btn">Comunity</a>
+      </div>
+      <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    </header>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebarMenu">
+      <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+      <a href="#home">Home</a>
+      <a href="#MiniGT">MiniGT</a>
+      <a href="#popular">Hotwheels</a>
+      <a href="#Macthbox">Matchbox</a>
+    </nav>
+
+<!-- Hero Section -->
+<section class="home" id="home">
+  <section class="video">
+    <!-- Container teks di atas banner -->
+    <div class="hero-overlay">
+      <h1>WALD GARAGE</h1>
+      <div class="sub1">
+        <h2>Koleksi Diecast Terbaik di Indonesia</h2>
+        <h6>Bisa bayar di tempat (COD) seluruh Indonesia</h6>
+      </div>
+    </div>
+
+    <!-- Video banner di bawah teks -->
+    <div class="video-banner">
+      <video autoplay muted loop playsinline>
+        <source src="video/Garage.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+</section>
+
+
+    <!-- Hotwheels Section -->
+    <section class="popular" id="popular">
+      <section class="subjudul">
+        <h1>PRODUK KAMI</h1>
+        <h2>Hotwheels</h2>
+        <div class="grid">
+          <div class="car-card">
+            <img src="img/porsche.jpg" alt="Porsche 911">
+            <h3>Porsche 911</h3>
+            <p><del>Rp 44.000</del> <strong>Rp 36.000</strong></p>
+            <button class="btn-beli" data-produk="Porsche 911" data-pesan="Halo gan, apakah stock mobil *Porsche 911* masih ada?">Beli Sekarang</button>
+          </div>
+          <div class="car-card">
+            <img src="img/buggati.jpg" alt="Bugatti Chiron">
+            <h3>Bugatti Chiron</h3>
+            <p><strong>Rp 55.000</strong></p>
+            <button class="btn-beli" data-produk="Bugatti Chiron" data-pesan="Halo gan, apakah stock mobil *Bugatti Chiron* masih ada?">Beli Sekarang</button>
+          </div>
+          <div class="car-card">
+            <img src="img/pagani.jpg" alt="Pagani Zonda R">
+            <h3>Pagani Zonda R</h3>
+            <p><del>Rp 39.000</del> <strong>Rp 35.000</strong></p>
+            <button class="btn-beli" data-produk="Pagani Zonda R" data-pesan="Halo gan, apakah stock mobil *Pagani Zonda R* masih ada?">Beli Sekarang</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Matchbox Section -->
+    <section class="Macthbox" id="Macthbox">
+      <section class="subjudul">
+        <h2>Matchbox</h2>
+        <div class="grid">
+          <div class="car-card">
+            <img src="img/mustank.jpg" alt="Mustang">
+            <h3>Mustang</h3>
+            <p><del>Rp 39.000</del> <strong>Rp 35.000</strong></p>
+            <button class="btn-beli" data-produk="Mustang" data-pesan="Halo gan, apakah stock mobil *Mustang* masih ada?">Beli Sekarang</button>
+          </div>
+          <div class="car-card">
+            <img src="img/comming soon.jpg" alt="Coming Soon">
+            <h3>Car 5</h3>
+            <p><strong>???</strong></p>
+            <button class="btn">Coming Soon</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Mini GT Section -->
+    <section class="MiniGT" id="MiniGT">
+      <section class="subjudul">
+        <h2>MiniGT</h2>
+        <div class="grid">
+          <div class="car-card">
+            <img src="img/comming soon.jpg" alt="Coming Soon">
+            <h3>Car 5</h3>
+            <p><strong>???</strong></p>
+            <button class="btn">Coming Soon</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Kontak -->
+    <section class="popular" id="contact">
+      <h2>Kontak Kami</h2>
+      <p>WhatsApp: 0882-0101-02735</p>
+      <p>Email: garagewald@gmail.com</p>
+      <p>Instagram: @waldgarage</p>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+  <canvas id="mouseTrail"></canvas>
+
+</body>
+</html>
