@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to bottom, #0a0014, #1e0030);
+  background: linear-gradient(to bottom, #0a0014, #300000);
   color: #fff;
   scroll-behavior: smooth;
   font-weight: 600;
@@ -40,13 +40,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #15002bd0;
+  background: #2b0000d0;
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(58, 0, 94, 0.3);
+  border: 2px solid rgba(94, 0, 0, 0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 60px rgba(255, 0, 255, 0.2);
+  box-shadow: 0 2px 60px rgba(255, 0, 0, 0.2);
 }
 
 .logo {
@@ -63,7 +63,7 @@ body {
 }
 
 .nav a:hover {
-  color: #a86eff;
+  color: #ff6e6e;
 }
 
 .hamburger {
@@ -85,7 +85,7 @@ body {
   right: -100%;
   width: 250px;
   height: 100%;
-  background: rgba(30, 0, 60, 0.95);
+  background: rgba(60, 0, 0, 0.95);
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
@@ -114,20 +114,20 @@ body {
 
 /* === Buttons === */
 .btn, .btn-beli {
-  background: linear-gradient(135deg, #6e00ff, #b400ff);
+  background: linear-gradient(135deg, #ff0000, #ff3700);
   color: white;
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  box-shadow: 0 0 10px #6e00ff88;
+  box-shadow: 0 0 10px #ff000088;
   transition: transform 0.2s, box-shadow 0.3s;
 }
 
 .btn:hover, .btn-beli:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #b400ffcc;
+  box-shadow: 0 0 20px #ff0000cc;
 }
 
 /* === Hero Section === */
@@ -153,7 +153,7 @@ body {
   font-size: 4rem;
   margin-bottom: 2rem;
   color: #dcc2ff;
-  text-shadow: 0 0 30px #9f00ff;
+  text-shadow: 0 0 30px #ff2200;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
 }
@@ -167,9 +167,9 @@ body {
 
 .video-banner video {
   width: 100%;
-  max-width: 960px;
+  max-width: 100%;
   border-radius: 15px;
-  box-shadow: 0 0 50px #3c0067;
+  box-shadow: 0 0 50px #670300;
 }
 
 /* === Produk Section === */
@@ -190,9 +190,9 @@ body {
   border-radius: 12px;
   width: 280px;
   text-align: center;
-  background: rgba(144, 0, 255, 0.1);
-  border: 2px solid rgba(230, 189, 255, 0.3);
-  box-shadow: 0 8px 32px rgba(94, 0, 166, 0.2);
+  background: rgba(208, 51, 51, 0.1);
+  border: 2px solid rgba(255, 189, 189, 0.3);
+  box-shadow: 0 8px 32px rgba(166, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   color: #fff;
@@ -226,8 +226,8 @@ body {
 
 .car-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 25px #a000ff, 0 0 40px #ff00ff44;
-  border-color: rgba(200, 73, 255, 0.6);
+  box-shadow: 0 0 25px #ff0000, 0 0 40px #ff000044;
+  border-color: rgba(255, 73, 73, 0.6);
 }
 
 /* === Subjudul Section === */
@@ -250,9 +250,9 @@ body {
   font-weight: 600;
   font-size: 2rem;
   text-shadow:
-    0 0 10px #ff00ff,
-    0 0 20px #cc00ff,
-    0 0 40px #a200ff;
+    0 0 10px #ff4800,
+    0 0 20px #ff4400,
+    0 0 40px #ff0000;
   color: #ffeaff;
   animation: glowText 3s ease-in-out infinite alternate;
 }
@@ -260,15 +260,15 @@ body {
 @keyframes glowText {
   0% {
     text-shadow:
-      0 0 10px #ff00ff,
-      0 0 20px #cc00ff,
-      0 0 40px #a200ff;
+      0 0 10px #f2ff00,
+      0 0 20px #ff6600,
+      0 0 40px #ff0000;
   }
   100% {
     text-shadow:
-      0 0 20px #ff00ff,
-      0 0 30px #cc00ff,
-      0 0 60px #a200ff;
+      0 0 20px #ff3300,
+      0 0 30px #ff0000,
+      0 0 60px #ff0000;
   }
 }
 
@@ -283,7 +283,7 @@ body {
 .sub1 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  text-shadow: 0 0 20px #9900ff;
+  text-shadow: 0 0 20px #ff3c00;
   color: rgb(251, 192, 255);
 }
 
@@ -294,10 +294,71 @@ body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.5px;
   text-shadow:
-    -1px -1px 0 #9900ff,
-     1px -1px 0 #9900ff,
-    -1px  1px 0 #9900ff,
-     1px  1px 0 #9900ff,
-     0 0 10px #2b00ff,
-     0 0 20px #d400ff;
+    -1px -1px 0 #ff0000,
+     1px -1px 0 #ff0000,
+    -1px  1px 0 #ff0000,
+     1px  1px 0 #ff0000,
+     0 0 10px #ff6a00,
+     0 0 20px #ff1900;
 }
+
+/* === SCROLL SNAP UNTUK KATEGORI & PRODUK === */
+html, body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px; /* supaya tidak ketutup header */
+}
+
+.category-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  height: 70%;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  background: rgba(255, 85, 0, 0.1);
+  border: 2px solid rgba(255, 189, 189, 0.3);
+  border-radius: 12px;
+  margin: 0 1rem;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+<section class="section" id="hotwheels">
+  <h2 class="category-title">Hot Wheels</h2>
+  <div class="horizontal-scroll">
+    <!-- tiap produk di sini -->
+    <div class="product-card"> ... </div>
+    <div class="product-card"> ... </div>
+  </div>
+</section>
