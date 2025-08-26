@@ -1,215 +1,60 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WALD Garage - Diecast Terlengkap</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WALD Garage - Home</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
   <!-- Background Video -->
   <div class="video-background">
     <video autoplay muted loop playsinline>
       <source src="video/bg.mp4" type="video/mp4">
-      Browser Anda tidak mendukung video.
+      Browser tidak mendukung video.
     </video>
   </div>
 
   <!-- Header -->
   <header class="header">
     <img src="img/logo.png" alt="Logo" class="logo">
-    <div class="middle-nav">
-      <a href="komunitas.html" class="btn">Komunitas</a>
-    </div>
+    <nav class="middle-nav">
+      <a href="index.html" class="btn"><i class="fa fa-home"></i> Home</a>
+      <a href="komunitas.html" class="btn"><i class="fa fa-users"></i> Komunitas</a>
+      <a href="shop.html" class="btn"><i class="fa fa-shopping-cart"></i> Shop</a>
+    </nav>
     <div class="hamburger" onclick="toggleSidebar()">☰</div>
   </header>
 
   <!-- Sidebar -->
   <nav class="sidebar" id="sidebarMenu">
     <span class="close-btn" onclick="toggleSidebar()">&times;</span>
-    <a href="#hotwheels">Hot Wheels</a>
-    <a href="#poprace">Pop Race</a>
-    <a href="#minigt">Mini GT</a>
+    <a href="shop.html#hotwheels">Hot Wheels</a>
+    <a href="shop.html#poprace">Pop Race</a>
+    <a href="shop.html#minigt">Mini GT</a>
   </nav>
 
-  <main>
-    <!-- Video Banner Tengah -->
-    <section class="video-banner">
-      <video autoplay muted loop playsinline>
-        <source src="video/garage.mp4" type="video/mp4" />
-        Browser Anda tidak mendukung video.
-      </video>
-    </section>
+  <!-- Video Banner Tengah -->
+  <section class="video-banner">
+    <video autoplay muted loop playsinline>
+      <source src="video/garage.mp4" type="video/mp4">
+    </video>
+  </section>
 
-    <!-- HOT WHEELS -->
-    <section class="section" id="hotwheels">
-      <h2 class="category-title">Hot Wheels</h2>
-      <div class="horizontal-scroll">
-
-        <div class="product-card">
-          <img src="img/Bently race day 2018.png" alt="Bently race day 2018">
-          <h3>Bently race day 2018</h3>
-          <p><strong>Rp 83k</strong></p>
-          <p>ongkir Rp 8k</p>
-          <button class="btn-beli" data-pesan="Halo, apakah Bently race day 2018 masih ada?">Beli Sekarang</button>
-        </div>
-
-        <div class="product-card">
-          <img src="img/fast & furious 2021 supra.jpg" alt="Fast & Furious 2021 Supra">
-          <h3>Fast & Furious 2021 Supra</h3>
-          <p><strong>Rp 157k</strong></p>
-          <p>ongkir Rp 8k</p>
-          <button class="btn-beli" data-pesan="Halo, apakah Fast & Furious 2021 Supra masih ada?">Beli Sekarang</button>
-        </div>
-
-        <div class="product-card">
-          <img src="img/fast & furious koenisegg ccx.jpg" alt="Fast & Furious Koenigsegg CCX">
-          <h3>Fast & Furious Koenigsegg CCX</h3>
-          <p><strong>Rp 187,5k</strong></p>
-          <p>ongkir Rp 8k</p>
-          <button class="btn-beli" data-pesan="Halo, apakah Fast & Furious Koenigsegg CCX masih ada?">Beli Sekarang</button>
-        </div>
-
-        <div class="product-card">
-          <img src="img/fast-furious-dodge.jpg" alt="Fast & Furious 2020 Dodge">
-          <h3>Fast & Furious 2020 Dodge</h3>
-          <p><strong>Rp 132k</strong></p>
-          <p>ongkir Rp 8k</p>
-          <button class="btn-beli" data-pesan="Halo, apakah Fast & Furious 2020 Dodge masih ada?">Beli Sekarang</button>
-        </div>
-
-        <div class="product-card">
-          <img src="img/fast-furious-subaru.jpg" alt="Fast & Furious Subaru WRX">
-          <h3>Fast & Furious Subaru WRX</h3>
-          <p><strong>Rp 127k</strong></p>
-          <p>ongkir Rp 8k</p>
-          <button class="btn-beli" data-pesan="Halo, apakah Fast & Furious Subaru WRX masih ada?">Beli Sekarang</button>
-        </div>
-
-        <div class="product-card">
-          <img src="img/mazda-787b.jpg" alt="Mazda 787B">
-          <h3>Mazda 787B</h3>
-          <p><strong>Rp 132k</strong></p>
-          <p>ongkir Rp 8k</p>
-          <button class="btn-beli" data-pesan="Halo, apakah Mazda 787B masih ada?">Beli Sekarang</button>
-        </div>
-
-        <div class="product-card">
-          <img src="img/fast-furious-180sx.jpg" alt="Fast & Furious Nissan 180 SX">
-          <h3>Fast & Furious Nissan 180 SX</h3>
-          <p><strong>Rp 152k</strong></p>
-          <p>ongkir Rp 8k</p>
-          <button class="btn-beli" data-pesan="Halo, apakah Fast & Furious Nissan 180 SX masih ada?">Beli Sekarang</button>
-        </div>
-
-        <div class="product-card">
-          <img src="img/ferrari-499p.jpg" alt="Circuit Legend Ferrari 499P">
-          <h3>Circuit Legend Ferrari 499P</h3>
-          <p><strong>Rp 292k</strong></p>
-          <p>ongkir Rp 8k</p>
-          <button class="btn-beli" data-pesan="Halo, apakah Circuit Legend Ferrari 499P masih ada?">Beli Sekarang</button>
-        </div>
-
-      </div>
-    </section>
-    
-<!-- POP RACE -->
-<section class="section" id="poprace">
-  <h2 class="category-title">Pop Race</h2>
-  <div class="horizontal-scroll">
-
-    <div class="product-card">
-      <img src="img/clk-gtr.jpg" alt="Mercedez Benz CLK GTR AMG">
-      <h3>Mercedez Benz CLK GTR AMG</h3>
-      <p><strong>Rp 377k</strong></p>
-      <p>ongkir Rp 8k</p>
-      <button class="btn-beli" data-pesan="Halo, apakah Mercedez Benz CLK GTR AMG masih ada?">Beli Sekarang</button>
-    </div>
-
-    <div class="product-card">
-      <img src="img/pandem-civic.jpg" alt="Pandem Civic EG6">
-      <h3>Pandem Civic EG6</h3>
-      <p><strong>Rp 216k</strong></p>
-      <p>ongkir Rp 8k</p>
-      <button class="btn-beli" data-pesan="Halo, apakah Pandem Civic EG6 masih ada?">Beli Sekarang</button>
-    </div>
-
-    <div class="product-card">
-      <img src="img/rwb-997-silver.jpg" alt="RWB 997 Silver">
-      <h3>RWB 997 Silver</h3>
-      <p><strong>Rp 192k</strong></p>
-      <p>ongkir Rp 8k</p>
-      <button class="btn-beli" data-pesan="Halo, apakah RWB 997 Silver masih ada?">Beli Sekarang</button>
-    </div>
-
-    <div class="product-card">
-      <img src="img/nwb-supra.jpg" alt="NWB Supra">
-      <h3>NWB Supra</h3>
-      <p><strong>Rp 190k</strong></p>
-      <p>ongkir Rp 8k</p>
-      <button class="btn-beli" data-pesan="Halo, apakah NWB Supra masih ada?">Beli Sekarang</button>
-    </div>
-
-  </div>
-</section>
-
-    <!-- MINI GT -->
-    <section class="section" id="minigt">
-      <h2 class="category-title">Mini GT</h2>
-      <div class="horizontal-scroll">
-        <div class="product-card">
-          <img src="img/rx7-silhouette.jpg" alt="RX-7 Super Silhouette">
-          <h3>RX-7 Super Silhouette</h3>
-          <p><strong>Rp 198k</strong></p>
-          <p>ongkir Rp 8k</p>
-        </div>
-
-        <div class="product-card">
-          <img src="img/bugatti-vision.jpg" alt="Bugatti Vision Gran Turismo">
-          <h3>Bugatti Vision Gran Turismo</h3>
-          <p><strong>Rp 207,5k</strong></p>
-          <p>ongkir Rp 8k</p>
-        </div>
-
-        <div class="product-card">
-          <img src="img/nissan-pandem.jpg" alt="Nissan Z Pandem Seiron B">
-          <h3>Nissan Z Pandem Seiron B</h3>
-          <p><strong>Rp 182k</strong></p>
-          <p>ongkir Rp 8k</p>
-        </div>
-
-        <div class="product-card">
-          <img src="img/sls-lb.jpg" alt="SLS LB Silhouette">
-          <h3>SLS LB Silhouette</h3>
-          <p><strong>Rp 228k</strong></p>
-          <p>ongkir Rp 8k</p>
-        </div>
-
-        <div class="product-card">
-          <img src="img/skyline-r34.jpg" alt="Nissan Skyline GTR R34">
-          <h3>Nissan Skyline GTR R34</h3>
-          <p><strong>Rp 183k</strong></p>
-          <p>ongkir Rp 8k</p>
-        </div>
-
-        <div class="product-card">
-          <img src="img/nsx-gt3.jpg" alt="Honda NSX GT3 Evo">
-          <h3>Honda NSX GT3 Evo</h3>
-          <p><strong>Rp 214k</strong></p>
-          <p>ongkir Rp 8k</p>
-        </div>
-
-        <div class="product-card">
-          <img src="img/aston-valkyrie.jpg" alt="Aston Martin Valkyrie">
-          <h3>Aston Martin Valkyrie</h3>
-          <p><strong>Rp 203k</strong></p>
-          <p>ongkir Rp 8k</p>
-        </div>
-      </div>
-    </section>
-  </main>
+  <!-- Deskripsi Brand -->
+  <section class="brand-desc">
+    <h1>🚀 WALD Garage</h1>
+    <p>
+      WALD Garage adalah rumah bagi kolektor diecast premium dengan sentuhan <b>teknologi modern</b>.  
+      Kami menghadirkan <span class="tech">Hot Wheels</span>, <span class="tech">Pop Race</span>, dan <span class="tech">Mini GT</span> terbaik yang dikurasi untuk pecinta otomotif.  
+      Website ini dibangun dengan nuansa <b>futuristik</b>, menggabungkan estetika <i>cyberpunk</i> dengan pengalaman belanja yang nyaman.  
+    </p>
+    <p>
+      Bergabunglah dengan komunitas kami, temukan koleksi langka, dan jadilah bagian dari ekosistem teknologi otomotif miniatur.
+    </p>
+  </section>
 
   <script src="main.js"></script>
 </body>
